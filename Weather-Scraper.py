@@ -5,7 +5,7 @@ from requests_html import HTMLSession
 
 s = HTMLSession()
 query = 'Lebanon, TN'
-url = f'https://www.google.com/search?client=firefox-b-1-d&q=weather+{query}'
+url = f'https://www.google.com/search?q=weather+{query}'
 
 r = s.get(url, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:99.0) Gecko/20100101 Firefox/99.0'})
 
